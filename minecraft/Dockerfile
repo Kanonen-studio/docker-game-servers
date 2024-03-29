@@ -18,5 +18,4 @@ COPY start-server.sh /minecraft/start-server.sh
 RUN chmod +x /minecraft/start-server.sh
 
 EXPOSE 25565 # standart port
-
 CMD ["/minecraft/start-server.sh"]
