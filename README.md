@@ -7,4 +7,4 @@ Teeworlds: ```docker run -d -p 8303:8303/udp --name teeworlds-server teeworlds-s
 
 OpenTTD: ```docker run -d -p 3979:3979/tcp -p 3979:3979/udp --name openttd-server openttd-server ```
 
-Factorio: ```docker run -d -p 34197:34197/udp --name factorio-server factorio-server ```
+Factorio: ```docker run -d -p 34197:34197/udp -e FACTORIO_RAM_MB=4096 -e FACTORIO_CPU_CORES=2 -e FACTORIO_PLAYER_SLOTS=20 --name factorio-server factorio-server ```
