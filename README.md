@@ -20,3 +20,5 @@ Assetto Corsa Competizione: ```docker run -d -p 9200:9200/udp -p 9201:9201/udp -
 Assetto Corsa: ```docker run -d -p 9600:9600/udp -p 9600:9600/tcp -e AC_RAM_MB=8192 -e AC_CPU_CORES=4 -e AC_PLAYER_SLOTS=30 --name ac-server ac-server```
 
 Palworld: ``` docker run -d -p 7777:7777 -e PALWORLD_RAM_MB=4096 -e PALWORLD_CPU_CORES=2 -e PALWORLD_PLAYER_SLOTS=20 --name palworld-server palworld-server```
+
+Valheim: ```docker run -d -p 2456-2458:2456-2458/udp -e VALHEIM_RAM_MB=4096 -e VALHEIM_CPU_CORES=2 -e VALHEIM_PLAYER_SLOTS=16 --name valheim-server valheim-server ```
