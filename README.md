@@ -18,3 +18,5 @@ Satisfactory: ``` docker run -d -p 15000:15000/udp -p 7777:7777/udp -p 15777:157
 Assetto Corsa Competizione: ```docker run -d -p 9200:9200/udp -p 9201:9201/udp -e ACC_RAM_MB=8192 -e ACC_CPU_CORES=4 -e ACC_PLAYER_SLOTS=30 --name acc-server acc-server ```
 
 Assetto Corsa: ```docker run -d -p 9600:9600/udp -p 9600:9600/tcp -e AC_RAM_MB=8192 -e AC_CPU_CORES=4 -e AC_PLAYER_SLOTS=30 --name ac-server ac-server```
+
+Palworld: ``` docker run -d -p 7777:7777 -e PALWORLD_RAM_MB=4096 -e PALWORLD_CPU_CORES=2 -e PALWORLD_PLAYER_SLOTS=20 --name palworld-server palworld-server```
