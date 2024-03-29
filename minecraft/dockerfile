@@ -1,7 +1,5 @@
-# Verwende eine spezifische Debian-Version als Basisimage
 FROM debian:bullseye
 
-# Installiere Abhängigkeiten
 RUN apt-get update && apt-get install -y \
     git \
     openjdk-17-jre-headless \
@@ -9,22 +7,16 @@ RUN apt-get update && apt-get install -y \
     curl \  # Füge curl hier hinzu
     && rm -rf /var/lib/apt/lists/*
 
-# Erstelle ein Arbeitsverzeichnis
 WORKDIR /minecraft
 
-# Lade BuildTools herunter und kompiliere Spigot
 RUN wget -O BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar \
     && java -jar BuildTools.jar --rev latest \
     && cp spigot-*.jar spigot.jar
 
-# Kopiere das Startskript in das Container-Image
 COPY start-server.sh /minecraft/start-server.sh
 
-# Mach das Skript ausführbar
 RUN chmod +x /minecraft/start-server.sh
 
-# Portfreigabe
-EXPOSE 25565
+EXPOSE 25565 # standart port
 
-# Starte den Minecraft Server mit dem Startskript
 CMD ["/minecraft/start-server.sh"]
