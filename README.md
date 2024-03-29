@@ -3,7 +3,7 @@ Minecraft: ```docker run -d -p 25565:25565 --name mein-minecraft-server minecraf
 
 FiveM: ``` docker run -d -p 30120:30120 --name fivem-server fivem-server```
 
-Teeworlds: ``docker run -d -p 8303:8303/udp -e TEEWORLDS_RAM_MB=512 -e TEEWORLDS_CPU_CORES=1 -e TEEWORLDS_PLAYER_SLOTS=16 --name teeworlds-server teeworlds-server ```
+Teeworlds: ```docker run -d -p 8303:8303/udp -e TEEWORLDS_RAM_MB=512 -e TEEWORLDS_CPU_CORES=1 -e TEEWORLDS_PLAYER_SLOTS=16 --name teeworlds-server teeworlds-server ```
 
 OpenTTD: ```docker run -d -p 3979:3979/tcp -p 3979:3979/udp -e OPENTTD_RAM_MB=1024 -e OPENTTD_CPU_CORES=2 -e OPENTTD_PLAYER_SLOTS=30 --name openttd-server openttd-server ```
 
