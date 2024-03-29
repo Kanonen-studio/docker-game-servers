@@ -6,3 +6,5 @@ FiveM: ``` docker run -d -p 30120:30120 --name fivem-server fivem-server```
 Teeworlds: ```docker run -d -p 8303:8303/udp --name teeworlds-server teeworlds-server ```
 
 OpenTTD: ```docker run -d -p 3979:3979/tcp -p 3979:3979/udp --name openttd-server openttd-server ```
+
+Factorio: ```docker run -d -p 34197:34197/udp --name factorio-server factorio-server ```
