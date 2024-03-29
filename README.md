@@ -10,3 +10,5 @@ OpenTTD: ```docker run -d -p 3979:3979/tcp -p 3979:3979/udp -e OPENTTD_RAM_MB=10
 Factorio: ```docker run -d -p 34197:34197/udp -e FACTORIO_RAM_MB=4096 -e FACTORIO_CPU_CORES=2 -e FACTORIO_PLAYER_SLOTS=20 --name factorio-server factorio-server ```
 
 Terraria: ``` docker run -d -p 7777:7777 -e TERRARIA_RAM_MB=2048 -e TERRARIA_CPU_CORES=2 -e TERRARIA_PLAYER_SLOTS=16 --name terraria-server terraria-server```
+
+ARK: Survival Evolved: ``` docker run -d -p 7777:7777/udp -p 27015:27015/tcp -p 27020:27020/udp -e ARK_RAM_MB=8192 -e ARK_CPU_CORES=4 -e ARK_PLAYER_SLOTS=30 --name ark-server ark-server ```
