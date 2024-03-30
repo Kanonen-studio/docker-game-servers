@@ -1,4 +1,6 @@
 # 12 Docker Game Server
+
+# Docker Run Befehl:
 Minecraft: ```docker run -d -p 25565:25565 --name mein-minecraft-server minecraft-spigot-server ``` 
 
 FiveM: ``` docker run -d -p 30120:30120 --name fivem-server fivem-server```
